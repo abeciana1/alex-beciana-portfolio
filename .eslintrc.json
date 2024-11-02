@@ -1,9 +1,34 @@
 {
   "extends": [
     "next/core-web-vitals",
-    "next/typescript",
     "next",
+    "next/typescript",
     "prettier",
     "plugin:storybook/recommended"
+  ],
+  "plugins": [
+    "prettier",
+    "react",
+    "cypress"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true,
+    "cypress/globals": true
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "react/react-in-jsx-scope": "off",
+    "cypress/no-unnecessary-waiting": "warn",
+    "cypress/no-assigning-return-values": "error"
+  },
+  "overrides": [
+    {
+      "files": ["cypress/**/*.cy.{js,jsx,ts,tsx}"],
+      "env": {
+        "cypress/globals": true
+      }
+    }
   ]
 }
