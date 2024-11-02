@@ -6,16 +6,12 @@
     "prettier",
     "plugin:storybook/recommended"
   ],
-  "plugins": [
-    "prettier",
-    "react",
-    "cypress"
-  ],
+  "plugins": ["prettier", "react", "cypress"],
   "env": {
     "browser": true,
     "node": true,
     "jest": true,
-    "cypress/globals": true
+    "cypress": true
   },
   "rules": {
     "prettier/prettier": "error",
@@ -27,7 +23,7 @@
     {
       "files": ["cypress/**/*.cy.{js,jsx,ts,tsx}"],
       "env": {
-        "cypress/globals": true
+        "cypress": true
       }
     }
   ]

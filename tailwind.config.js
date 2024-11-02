@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-import { nextui } from '@nextui-org/react'
+import { nextui } from '@nextui-org/react';
 
 module.exports = {
   content: [],
@@ -20,19 +20,19 @@ module.exports = {
           colors: {
             primary: {
               500: '#93c5fd',
-              default: '#075985'
+              default: '#075985',
             },
             danger: {
-              default: '#EA2B1F'
+              default: '#EA2B1F',
             },
             success: {
-              default: '#62C370'
+              default: '#62C370',
             },
             secondary: {
-              default: '#F7B538'
+              default: '#F7B538',
             },
             warning: {
-              default: '#f87171'
+              default: '#f87171',
             },
           },
         },
@@ -44,20 +44,20 @@ module.exports = {
               default: '#93c5fd',
             },
             warning: {
-              default: '#f87171'
+              default: '#f87171',
             },
             success: {
-              default: '#4ade80'
+              default: '#4ade80',
             },
             secondary: {
-              default: '#F7B538'
+              default: '#F7B538',
             },
             danger: {
-              default: '#DF2935'
+              default: '#DF2935',
             },
-          }
-        }
-      }
-    })
+          },
+        },
+      },
+    }),
   ],
-}
+};
