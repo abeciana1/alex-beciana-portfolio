@@ -2,6 +2,7 @@
 import './globals.css';
 import Providers from '@/app/providers';
 import { Tilt_Neon, Montserrat } from 'next/font/google';
+import NavBar from '@/app/(components)/_navigation/NavBar'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -25,7 +26,10 @@ export default function RootLayout({
       <body
         className={`${montserrat.variable} ${tiltNeon.variable} antialiased`}
       >
-        <Providers>{children}</Providers>
+        <Providers>
+          <NavBar />
+          {children}
+        </Providers>
       </body>
     </html>
   );
