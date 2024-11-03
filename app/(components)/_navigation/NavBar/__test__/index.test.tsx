@@ -10,4 +10,13 @@ describe('NavBar', () => {
     const navBar = screen.getByRole('navigation')
     expect(navBar).toBeInTheDocument()
   })
+  it('should have an unordered list of links', () => {
+    const linksList = screen.getByRole('list')
+    expect(linksList).toBeInTheDocument()
+  })
+  it('should have my name', () => {
+    const myName = screen.getByTestId('my-name')
+    expect(myName.innerHTML).toBe('Alex Beciana')
+    expect(myName).toBeInTheDocument()
+  })
 })
