@@ -7,7 +7,12 @@ module.exports = {
     './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        montserrat: ['var(--font-montserrat)', 'sans-serif'],
+        tiltNeon: ['var(--font-tilt-neon)', 'sans-serif'],
+      },
+    },
   },
   darkMode: 'class',
   plugins: [
