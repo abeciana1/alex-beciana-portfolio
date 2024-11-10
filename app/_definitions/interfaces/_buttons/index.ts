@@ -13,4 +13,6 @@ export interface ButtonIconI extends ButtonI {
   iconOnly: boolean;
   radius: RadiusE;
   color: ColorE;
+  startIcon: boolean;
+  endIcon: boolean;
 }
