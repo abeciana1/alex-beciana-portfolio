@@ -11,6 +11,9 @@ const config: StorybookConfig = {
     '@storybook/addon-essentials',
     '@chromatic-com/storybook',
     '@storybook/addon-interactions',
+    '@storybook/addon-knobs/register',
+    'storybook-addon-playwright/preset',
+    'storybook-addon-playwright/register',
   ],
   framework: {
     name: '@storybook/nextjs',
