@@ -19,8 +19,9 @@ export default defineConfig({
   workers: 2,
   reporter: 'list',
   use: {
-    baseURL: 'http://localhost:8080',
+    baseURL: 'http://localhost:6006',
     trace: 'on-first-retry',
+    browserName: 'chromium',
   },
   projects: [
     {
