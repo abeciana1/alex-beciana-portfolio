@@ -1,22 +1,22 @@
-import '@testing-library/jest-dom'
-import { render, screen } from '@testing-library/react'
-import NavBar from '@/app/_components/_navigation/NavBar'
+import '@testing-library/jest-dom';
+import { render, screen } from '@testing-library/react';
+import NavBar from '@/app/_components/_navigation/NavBar';
 
 describe('NavBar', () => {
   beforeEach(() => {
-    render(<NavBar />)
-  })
+    render(<NavBar />);
+  });
   it('should have role of navigation', () => {
-    const navBar = screen.getByRole('navigation')
-    expect(navBar).toBeInTheDocument()
-  })
+    const navBar = screen.getByRole('navigation');
+    expect(navBar).toBeInTheDocument();
+  });
   it('should have an unordered list of links', () => {
-    const linksList = screen.getByRole('list')
-    expect(linksList).toBeInTheDocument()
-  })
+    const linksList = screen.getByRole('list');
+    expect(linksList).toBeInTheDocument();
+  });
   it('should have my name', () => {
-    const myName = screen.getByTestId('my-name')
-    expect(myName.innerHTML).toBe('Alex Beciana')
-    expect(myName).toBeInTheDocument()
-  })
-})
+    const myName = screen.getByTestId('my-name');
+    expect(myName.innerHTML).toBe('Alex Beciana');
+    expect(myName).toBeInTheDocument();
+  });
+});

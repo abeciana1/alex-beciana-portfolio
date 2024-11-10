@@ -14,7 +14,7 @@ const config: StorybookConfig = {
     '@storybook/addon-knobs/register',
     'storybook-addon-playwright/preset',
     'storybook-addon-playwright/register',
-    '@storybook/addon-styling-webpack'
+    '@storybook/addon-styling-webpack',
   ],
   framework: {
     name: '@storybook/nextjs',
