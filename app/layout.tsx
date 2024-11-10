@@ -1,8 +1,7 @@
-
 import './globals.css';
 import Providers from '@/app/providers';
 import { Tilt_Neon, Montserrat } from 'next/font/google';
-import NavBar from '@/app/(components)/_navigation/NavBar'
+import NavBar from '@/app/_components/_navigation/NavBar';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
