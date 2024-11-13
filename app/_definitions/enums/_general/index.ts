@@ -11,5 +11,5 @@ export enum ColorE {
   SUCCESS = 'success',
   WARNING = 'warning',
   DANGER = 'danger',
-  FOREGROUND = 'foreground'
+  DEFAULT = 'default'
 }
