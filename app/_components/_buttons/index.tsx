@@ -1,7 +1,7 @@
 import { Button } from "@nextui-org/react";
 import { ButtonIconI } from '@/app/_definitions/interfaces/_buttons'
 
-const IconButton = ({
+export const IconButton = ({
   buttonText,
   onClick,
   buttonIcon,
@@ -29,5 +29,3 @@ const IconButton = ({
     </>
   )
 }
-
-export default IconButton
