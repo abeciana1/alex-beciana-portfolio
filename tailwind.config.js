@@ -21,6 +21,7 @@ module.exports = {
       defaultTheme: 'light',
       themes: {
         light: {
+          default: '#F8F8F8',
           background: '#F8F8F8',
           foreground: {
             500: '#BEC5C5',
@@ -46,6 +47,7 @@ module.exports = {
           },
         },
         dark: {
+          default: '#292F36',
           foreground: '#F8F8F8',
           background: '#292F36',
           colors: {
