@@ -11,7 +11,7 @@ module.exports = {
       fontFamily: {
         montserrat: ['var(--font-montserrat)', 'sans-serif'],
         tiltNeon: ['var(--font-tilt-neon)', 'sans-serif'],
-      },
+      }
     },
   },
   darkMode: 'class',
