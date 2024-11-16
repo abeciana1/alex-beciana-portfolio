@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat.variable} ${tiltNeon.variable} antialiased`}
+        className={`${montserrat.variable} ${tiltNeon.variable} antialiased bg-background text-foreground`}
       >
         <Providers>
           <NavBar />
