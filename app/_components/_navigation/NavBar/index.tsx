@@ -38,7 +38,7 @@ const NavBar = () => {
   return (
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
-      className="font-tiltNeon py-3 bg-background"
+      className="font-tiltNeon py-3 bg-background text-foreground"
     >
       <NavbarContent>
         <NavbarBrand>
