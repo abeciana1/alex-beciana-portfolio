@@ -52,7 +52,7 @@ const NavBar = () => {
           </Link>
         </NavbarBrand>
       </NavbarContent>
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent data-testid='linkList' className="hidden sm:flex gap-4" justify="center">
         <NavLink linkText="About" href="/about" />
         <NavLink linkText="Freelance" href="/freelance" />
         <NavLink linkText="Projects" href="/projects" />

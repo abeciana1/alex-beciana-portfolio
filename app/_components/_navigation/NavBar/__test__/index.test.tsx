@@ -11,7 +11,7 @@ describe('NavBar', () => {
     expect(navBar).toBeInTheDocument();
   });
   it('should have an unordered list of links', () => {
-    const linksList = screen.getByRole('list');
+    const linksList = screen.getByTestId('linkList')
     expect(linksList).toBeInTheDocument();
   });
   it('should have my name', () => {
