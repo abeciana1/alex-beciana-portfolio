@@ -2,6 +2,8 @@ import { Button } from '@nextui-org/react';
 import { ButtonIconI } from '@/app/_definitions/interfaces/_buttons';
 import cx from 'classnames'
 import { ColorE } from '@/app/_definitions/enums/_general'
+import { useTheme } from 'next-themes';
+import Colors from '@/app/_utils/color-lookup';
 
 export const IconButton = ({
   buttonText = '',
@@ -14,14 +16,16 @@ export const IconButton = ({
   endIcon = false,
   iconSize,
   testId = '',
-  textColor,
+  textColor = ColorE.FORE,
   variant = "solid"
 }: ButtonIconI) => {
+  const { resolvedTheme } = useTheme();
+  console.log({resolvedTheme})
   const Icon = buttonIcon;
   const iconStyle = {
-    color: textColor
+    fill: Colors[resolvedTheme === 'light' ? 'light' : 'dark'][textColor]
   }
-  // todo remove color attr -> use classnames
+  // todo create utils object for color name lookup to get hex code
   // todo add border class name styles
   // todo work on 
   return (
@@ -54,7 +58,7 @@ export const IconButton = ({
           onClick={onClick}
           isIconOnly={iconOnly}
           radius={radius}
-          endContent={<Icon size={iconSize} />}
+          endContent={<Icon size={iconSize} className={`text-${textColor}`} />}
           className={cx({
             ['bg-background']: color === ColorE.BACK,
             ['bg-foreground']: color === ColorE.FORE,
