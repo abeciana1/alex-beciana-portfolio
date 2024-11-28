@@ -18,3 +18,5 @@ const Colors = {
     danger: '#DF2935'
   }
 }
+
+export default Colors
