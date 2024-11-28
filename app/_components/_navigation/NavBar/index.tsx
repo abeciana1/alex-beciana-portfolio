@@ -40,7 +40,7 @@ const NavBar = () => {
       onMenuOpenChange={setIsMenuOpen}
       className="font-tiltNeon py-3 bg-background text-foreground"
     >
-      <NavbarContent>
+      <NavbarContent className='max-w-fit'>
         <NavbarBrand>
           <Link
             href="/"
@@ -60,7 +60,7 @@ const NavBar = () => {
         <NavLink linkText="Blog" href="/blog" />
         <NavLink linkText="Contact" href="/contact" />
       </NavbarContent>
-      <NavbarContent justify="end">
+      <NavbarContent className='max-w-fit' justify="end">
         <IconButton
           iconOnly
           startIcon
