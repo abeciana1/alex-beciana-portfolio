@@ -6,7 +6,10 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Alex Beciana',
-  description: 'Full stack software engineer with three years of experience with an entrepreneurial spirit.'
+  description: 'Full stack software engineer with three years of experience with an entrepreneurial spirit.',
+  icons: {
+    icon: '/waving.ico'
+  }
 }
 
 const montserrat = Montserrat({
