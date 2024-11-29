@@ -25,8 +25,7 @@ export const IconButton = ({
   const iconStyle = {
     fill: Colors[resolvedTheme === 'light' ? 'light' : 'dark'][textColor]
   }
-  // todo add border class name styles
-  // todo work on 
+  // todo add border class name styles 
   return (
     <>
       {buttonIcon && startIcon && endIcon === false && (
