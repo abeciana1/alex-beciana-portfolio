@@ -25,7 +25,6 @@ export const IconButton = ({
   const iconStyle = {
     fill: Colors[resolvedTheme === 'light' ? 'light' : 'dark'][textColor]
   }
-  // todo add border class name styles 
   return (
     <>
       {buttonIcon && startIcon && endIcon === false && (
@@ -43,7 +42,9 @@ export const IconButton = ({
             ['bg-secondary']: color === ColorE.SECONDARY,
             ['bg-danger']: color === ColorE.DANGER,
             ['bg-warning']: color === ColorE.WARNING,
-            ['bg-success']: color === ColorE.SUCCESS
+            ['bg-success']: color === ColorE.SUCCESS,
+            ['border-2 border-foreground']: (variant === 'bordered' || variant === 'ghost') && color === ColorE.BACK,
+            ['border-2 border-background']: (variant === 'bordered' || variant === 'ghost') && color === ColorE.FORE
           })}
         >
           {buttonText && !iconOnly && buttonText}
@@ -64,7 +65,9 @@ export const IconButton = ({
             ['bg-secondary']: color === ColorE.SECONDARY,
             ['bg-danger']: color === ColorE.DANGER,
             ['bg-warning']: color === ColorE.WARNING,
-            ['bg-success']: color === ColorE.SUCCESS
+            ['bg-success']: color === ColorE.SUCCESS,
+            ['border-2 border-foreground']: (variant === 'bordered' || variant === 'ghost') && color === ColorE.BACK,
+            ['border-2 border-background']: (variant === 'bordered' || variant === 'ghost') && color === ColorE.FORE
           })}
         >
           {buttonText && !iconOnly && buttonText}
