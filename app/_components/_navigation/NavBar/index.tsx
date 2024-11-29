@@ -71,6 +71,7 @@ const NavBar = () => {
           radius={RadiusE.FULL}
           buttonIcon={theme === 'light' ? MdNightlightRound : MdLightMode}
           textColor={ColorE.FORE}
+          variant='bordered'
         />
       </NavbarContent>
       <NavbarMenu className="pt-6 gap-4 bg-background">
