@@ -25,7 +25,6 @@ export const IconButton = ({
   const iconStyle = {
     fill: Colors[resolvedTheme === 'light' ? 'light' : 'dark'][textColor]
   }
-  // todo create utils object for color name lookup to get hex code
   // todo add border class name styles
   // todo work on 
   return (
