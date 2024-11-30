@@ -9,7 +9,7 @@ export const Heading1 = ({
 }: HeadingI) => {
   return (
     <h1
-      className={cx('text-5xl', {
+      className={cx('text-5xl leading-relaxed font-tiltNeon font-bold', {
         ['text-background']: color === ColorE.BACK,
         ['text-foreground']: color === ColorE.FORE,
         ['text-primary']: color === ColorE.PRIMARY,
