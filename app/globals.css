@@ -19,4 +19,11 @@
 body {
   color: var(--foreground);
   background: var(--background);
+  @apply mx-auto;
+  @apply px-5 md:px-20;
+}
+
+.page-margin{
+  max-width: 1440px;
+  height: auto;
 }
