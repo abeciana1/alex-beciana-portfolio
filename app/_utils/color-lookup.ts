@@ -6,7 +6,8 @@ const Colors = {
     secondary: '#F7B538',
     success: '#62C370',
     warning: '#f87171',
-    danger: '#EA2B1F'
+    danger: '#EA2B1F',
+    transparent: 'transparent'
   },
   "dark": {
     foreground: '#F8F8F8',
@@ -15,7 +16,8 @@ const Colors = {
     warning: '#f87171',
     success: '#4ade80',
     secondary: '#F7B538',
-    danger: '#DF2935'
+    danger: '#DF2935',
+    transparent: 'transparent'
   }
 }
 
