@@ -13,6 +13,7 @@ import { IconButton } from '@/app/_components/_buttons';
 import { useTheme } from 'next-themes';
 import { MdLightMode, MdNightlightRound } from 'react-icons/md';
 import { ColorE, RadiusE } from '@/app/_definitions/enums/_general';
+import cx from 'classnames'
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,7 +39,10 @@ const NavBar = () => {
   return (
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
-      className="font-tiltNeon py-3 bg-transparent text-foreground backdrop-blur-none"
+      className={cx("z-50 font-tiltNeon py-3 text-foreground backdrop-blur-none w-full", {
+        ['bg-background']: isMenuOpen,
+        ['bg-transparent']: !isMenuOpen
+      })}
     >
       <NavbarContent className='max-w-fit'>
         <NavbarBrand>
@@ -52,7 +56,7 @@ const NavBar = () => {
           </Link>
         </NavbarBrand>
       </NavbarContent>
-      <NavbarContent data-testid='linkList' className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent data-testid='linkList' className="hidden sml:flex gap-4" justify="center">
         <NavLink linkText="About" href="/about" />
         <NavLink linkText="Freelance" href="/freelance" />
         <NavLink linkText="Projects" href="/projects" />
@@ -64,7 +68,7 @@ const NavBar = () => {
         <IconButton
           iconOnly
           startIcon
-          color={ColorE.BACK}
+          color={ColorE.TRANSPARENT}
           onClick={modeChangeHandler}
           testId="mode-changer"
           iconSize={22}
@@ -74,7 +78,7 @@ const NavBar = () => {
           variant='bordered'
         />
       </NavbarContent>
-      <NavbarMenu className="pt-6 gap-4 bg-background">
+      <NavbarMenu className="pt-6 gap-4 bg-background h-screen z-50 px-12">
         <NavLink linkText="About" href="/about" />
         <NavLink linkText="Freelance" href="/freelance" />
         <NavLink linkText="Projects" href="/projects" />
@@ -84,7 +88,7 @@ const NavBar = () => {
       </NavbarMenu>
       <NavbarMenuToggle
         aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
-        className="sm:hidden font-bold text-3xl text-foreground"
+        className="tab:hidden font-bold text-3xl text-foreground"
       />
     </Navbar>
   );
