@@ -43,8 +43,9 @@ export const IconButton = ({
             ['bg-danger']: color === ColorE.DANGER,
             ['bg-warning']: color === ColorE.WARNING,
             ['bg-success']: color === ColorE.SUCCESS,
-            ['border-2 border-foreground']: (variant === 'bordered' || variant === 'ghost') && color === ColorE.BACK,
-            ['border-2 border-background']: (variant === 'bordered' || variant === 'ghost') && color === ColorE.FORE
+            ['bg-transparent']: color === ColorE.TRANSPARENT,
+            ['border-2 border-foreground']: (variant === 'bordered' || variant === 'ghost') && (color === ColorE.BACK || color === ColorE.TRANSPARENT),
+            ['border-2 border-background']: (variant === 'bordered' || variant === 'ghost') && (color === ColorE.FORE)
           })}
         >
           {buttonText && !iconOnly && buttonText}
