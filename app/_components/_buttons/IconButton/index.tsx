@@ -5,7 +5,7 @@ import { ColorE } from '@/app/_definitions/enums/_general'
 import { useTheme } from 'next-themes';
 import Colors from '@/app/_utils/color-lookup';
 
-export const IconButton = ({
+const IconButton = ({
   buttonText = '',
   onClick,
   buttonIcon,
@@ -77,3 +77,5 @@ export const IconButton = ({
     </>
   );
 };
+
+export default IconButton;

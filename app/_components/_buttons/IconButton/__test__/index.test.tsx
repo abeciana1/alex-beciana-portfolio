@@ -1,8 +1,8 @@
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
-import { IconButton } from '@/app/_components/_buttons'
-import { ColorE, RadiusE } from '@/app/_definitions/enums/_general'
-import { MdFavorite } from "react-icons/md";
+import IconButton from '@/app/_components/_buttons/IconButton';
+import { ColorE, RadiusE } from '@/app/_definitions/enums/_general';
+import { MdFavorite } from 'react-icons/md';
 
 describe('Buttons', () => {
   describe('IconButton', () => {
@@ -18,12 +18,12 @@ describe('Buttons', () => {
           testId="test-icon-button"
           startIcon
         />
-      )
-    })
+      );
+    });
     it('renders the button text', () => {
-      const button = screen.getByTestId('test-icon-button')
-      expect(button.textContent).toBe('Test Button')
-      expect(button).toBeInTheDocument()
-    })
-  })
-})
+      const button = screen.getByTestId('test-icon-button');
+      expect(button.textContent).toBe('Test Button');
+      expect(button).toBeInTheDocument();
+    });
+  });
+});
