@@ -7,6 +7,14 @@ module.exports = {
     './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    screens: {
+      sm: '320px',
+      lm: '376px',
+      tab: '481px',
+      sml: '769px',
+      lap: '1025px',
+      xl: '1441px'
+    },
     extend: {
       fontFamily: {
         montserrat: ['var(--font-montserrat)', 'sans-serif'],
