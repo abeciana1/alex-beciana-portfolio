@@ -24,7 +24,9 @@ const TwoColumnHero = ({
   return (
     <>
       {gradientBlur &&
-        <div className="z-0 absolute object-cover lg:top-20 text-center blur-3xl opacity-30 h-5/6 max-h-screen w-screen max-w-5xl rounded-3xl bg-gradient-to-r from-blue-300 via-yellow-200 to-orange-400" />
+        <section className='flex justify-center'>
+          <div className="hidden: lg:block z-0 absolute object-cover lg:top-20 text-center blur-3xl opacity-30 h-5/6 max-h-screen w-screen max-w-5xl rounded-3xl bg-gradient-to-r from-blue-300 via-yellow-200 to-orange-400" />
+        </section>
       }
       <section className={cx('z-50 relative items-center flex mx-auto gap-5 lg:gap-20', {
         ['flex-col sml:flex-row-reverse']: reverseOrder,
