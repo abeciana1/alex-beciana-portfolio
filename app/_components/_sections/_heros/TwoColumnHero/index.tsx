@@ -1,7 +1,5 @@
-'use client'
 import { TwoColumnHeroI } from '@/app/_definitions/interfaces/_sections'
 import cx from 'classnames'
-import useResponsiveness from '@/app/_hooks/useResponsiveness'
 import { Heading1 } from '@/app/_components/_styled/_headings'
 import { ColorE } from '@/app/_definitions/enums/_general'
 import Image from 'next/image'
@@ -17,10 +15,6 @@ const TwoColumnHero = ({
   children
 }: TwoColumnHeroI) => {
   const {
-    isMobile,
-    isTablet
-  } = useResponsiveness() || {}
-  const {
     src,
     alt,
     className,
@@ -33,11 +27,10 @@ const TwoColumnHero = ({
         <div className="z-0 absolute object-cover lg:top-20 text-center blur-3xl opacity-30 h-5/6 max-h-screen w-screen max-w-5xl rounded-3xl bg-gradient-to-r from-blue-300 via-yellow-200 to-orange-400" />
       }
       <section className={cx('z-50 relative items-center flex mx-auto gap-5 lg:gap-20', {
-        ['flex-row-reverse']: reverseOrder,
-        ['flex-col']: isMobile || isTablet,
-        ['flex-col-reverse']: (isMobile || isTablet) && reverseOrder,
+        ['flex-col-reverse sml:flex-row-reverse']: reverseOrder,
+        ['flex-col sml:flex-row']: !reverseOrder,
       })}>
-        <div className='space-y-3 lg:w-3/5'>
+        <div className='space-y-3 sml:w-3/5'>
           {headingLevel === 1 &&
             <Heading1 text={headingText} color={ColorE.FORE} />
           }
