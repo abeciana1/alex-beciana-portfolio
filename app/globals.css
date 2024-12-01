@@ -3,16 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --background: #F8F8F8;
-  --foreground: #292F36;
+  --background: #f8f8f8;
+  --foreground: #292f36;
 }
-
-
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #292F36;
-    --foreground: #F8F8F8;
+    --background: #292f36;
+    --foreground: #f8f8f8;
   }
 }
 
@@ -20,14 +18,26 @@ body {
   color: var(--foreground);
   background: var(--background);
   @apply mx-auto;
-  @apply px-5 sml:px-20;
+  @apply px-5 tab:px-20;
 }
 
-.page-margin{
+.page-margin {
   max-width: 1440px;
   height: auto;
 }
 
 header {
   @apply px-0 !important;
+}
+
+.expand-btn {
+  height: 40px;
+  width: 40px;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.expand-btn:hover {
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
 }
