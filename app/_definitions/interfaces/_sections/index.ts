@@ -1,5 +1,5 @@
-import { HeadingLevelT } from '@/app/_definitions/types/_general'
-import { ImageI } from '@/app/_definitions/interfaces/_general'
+import { HeadingLevelT } from '@/app/_definitions/types/_general';
+import { ImageI } from '@/app/_definitions/interfaces/_general';
 
 export interface TwoColumnHeroI {
   headingLevel: HeadingLevelT;

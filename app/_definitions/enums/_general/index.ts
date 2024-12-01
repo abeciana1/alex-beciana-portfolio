@@ -2,7 +2,7 @@ export enum RadiusE {
   SM = 'sm',
   MD = 'md',
   LG = 'lg',
-  FULL = 'full'
+  FULL = 'full',
 }
 
 export enum ColorE {
@@ -13,5 +13,5 @@ export enum ColorE {
   DANGER = 'danger',
   BACK = 'background',
   FORE = 'foreground',
-  TRANSPARENT = 'transparent'
+  TRANSPARENT = 'transparent',
 }

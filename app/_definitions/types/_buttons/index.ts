@@ -10,4 +10,11 @@ export type OnClickNoReturnFuncT = () => void;
 
 export type OnPress = PressEvent | OnClickNoReturnFuncT;
 
-export type VariantT = "solid" | "bordered" | "light" | "flat" | "faded" | "shadow" | "ghost"
+export type VariantT =
+  | 'solid'
+  | 'bordered'
+  | 'light'
+  | 'flat'
+  | 'faded'
+  | 'shadow'
+  | 'ghost';
