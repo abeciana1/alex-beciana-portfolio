@@ -61,7 +61,7 @@ const NavBar = () => {
       </NavbarContent>
       <NavbarContent
         data-testid="linkList"
-        className="hidden sml:flex gap-4"
+        className="hidden tab:flex gap-4"
         justify="center"
       >
         <NavLink linkText="About" href="/about" />
