@@ -8,18 +8,18 @@ module.exports = {
   ],
   theme: {
     screens: {
-      sm: '320px',
-      lm: '376px',
+      xs: '320px',
+      sm: '376px',
       tab: '481px',
-      sml: '769px',
-      lap: '1025px',
-      xl: '1441px'
+      md: '769px',
+      lg: '1025px',
+      xl: '1441px',
     },
     extend: {
       fontFamily: {
         montserrat: ['var(--font-montserrat)', 'sans-serif'],
         tiltNeon: ['var(--font-tilt-neon)', 'sans-serif'],
-      }
+      },
     },
   },
   darkMode: 'class',
