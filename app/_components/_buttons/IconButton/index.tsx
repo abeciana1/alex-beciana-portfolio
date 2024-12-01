@@ -1,7 +1,7 @@
 import { Button } from '@nextui-org/react';
 import { ButtonIconI } from '@/app/_definitions/interfaces/_buttons';
-import cx from 'classnames'
-import { ColorE } from '@/app/_definitions/enums/_general'
+import cx from 'classnames';
+import { ColorE } from '@/app/_definitions/enums/_general';
 import { useTheme } from 'next-themes';
 import Colors from '@/app/_utils/color-lookup';
 
@@ -17,14 +17,13 @@ const IconButton = ({
   iconSize,
   testId = '',
   textColor = ColorE.FORE,
-  variant = "solid"
+  variant = 'solid',
 }: ButtonIconI) => {
   const { resolvedTheme } = useTheme();
-  console.log({resolvedTheme})
   const Icon = buttonIcon;
   const iconStyle = {
-    fill: Colors[resolvedTheme === 'light' ? 'light' : 'dark'][textColor]
-  }
+    fill: Colors[resolvedTheme === 'light' ? 'light' : 'dark'][textColor],
+  };
   return (
     <>
       {buttonIcon && startIcon && endIcon === false && (
@@ -44,8 +43,12 @@ const IconButton = ({
             ['bg-warning']: color === ColorE.WARNING,
             ['bg-success']: color === ColorE.SUCCESS,
             ['bg-transparent']: color === ColorE.TRANSPARENT,
-            ['border-2 border-foreground']: (variant === 'bordered' || variant === 'ghost') && (color === ColorE.BACK || color === ColorE.TRANSPARENT),
-            ['border-2 border-background']: (variant === 'bordered' || variant === 'ghost') && (color === ColorE.FORE)
+            ['border-2 border-foreground']:
+              (variant === 'bordered' || variant === 'ghost') &&
+              (color === ColorE.BACK || color === ColorE.TRANSPARENT),
+            ['border-2 border-background']:
+              (variant === 'bordered' || variant === 'ghost') &&
+              color === ColorE.FORE,
           })}
         >
           {buttonText && !iconOnly && buttonText}
@@ -67,8 +70,12 @@ const IconButton = ({
             ['bg-danger']: color === ColorE.DANGER,
             ['bg-warning']: color === ColorE.WARNING,
             ['bg-success']: color === ColorE.SUCCESS,
-            ['border-2 border-foreground']: (variant === 'bordered' || variant === 'ghost') && color === ColorE.BACK,
-            ['border-2 border-background']: (variant === 'bordered' || variant === 'ghost') && color === ColorE.FORE
+            ['border-2 border-foreground']:
+              (variant === 'bordered' || variant === 'ghost') &&
+              color === ColorE.BACK,
+            ['border-2 border-background']:
+              (variant === 'bordered' || variant === 'ghost') &&
+              color === ColorE.FORE,
           })}
         >
           {buttonText && !iconOnly && buttonText}
