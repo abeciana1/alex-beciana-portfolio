@@ -34,6 +34,8 @@ module.exports = {
             DEFAULT: '#292F36',
           },
           colors: {
+            black: '#292F36',
+            white: '#F8F8F8',
             primary: {
               500: '#93c5fd',
               DEFAULT: '#075985',
@@ -54,6 +56,8 @@ module.exports = {
         },
         dark: {
           colors: {
+            black: '#292F36',
+            white: '#F8F8F8',
             foreground: '#F8F8F8',
             background: '#292F36',
             primary: {
