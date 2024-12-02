@@ -20,3 +20,7 @@ export interface PreRenderLinkI extends LinkI {
   externalLink?: boolean;
   underline?: boolean;
 }
+
+export interface LinkButtonI extends LinkI, PreRenderLinkI {
+  color: ColorE;
+}
