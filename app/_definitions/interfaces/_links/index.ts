@@ -23,4 +23,5 @@ export interface PreRenderLinkI extends LinkI {
 
 export interface LinkButtonI extends LinkI, PreRenderLinkI {
   color: ColorE;
+  arrow?: boolean;
 }
