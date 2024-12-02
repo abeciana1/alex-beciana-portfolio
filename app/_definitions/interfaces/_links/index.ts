@@ -10,7 +10,7 @@ export interface LinkI {
 }
 
 export interface IExpandLinkProps extends LinkI {
-  icon: React.ReactNode;
+  buttonIcon: React.ReactNode;
   addClass?: string;
   ariaLabel: string;
 }
