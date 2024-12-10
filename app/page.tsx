@@ -4,6 +4,7 @@ import { TiSocialLinkedin } from 'react-icons/ti';
 import { AiOutlineGithub, AiOutlineBehance } from 'react-icons/ai';
 import ExpandBtnLink from './_components/_links/ExpandBtn';
 import { ColorE } from './_definitions/enums/_general';
+import LinkButton from '@/app/_components/_links/LinkButton'
 
 export default async function Home() {
   return (
@@ -21,6 +22,15 @@ export default async function Home() {
           className: '',
         }}
       >
+        <LinkButton
+          linkText='test link'
+          href='/about'
+          testId='test-link'
+          color={ColorE.SECONDARY}
+          externalLink
+          ariaLabel='link to test page'
+          arrow={false}
+        />
         <div className="flex pb-8 space-x-4 md:space-y-0 pt-5 flex-row relative items-center">
           <ExpandBtnLink
             buttonIcon={<TiSocialLinkedin strokeWidth='1' className='h-7 w-7 mx-auto fill-background' />}
